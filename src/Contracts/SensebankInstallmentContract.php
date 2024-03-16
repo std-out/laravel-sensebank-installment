@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace StdOut\LaravelSensebankInstallment\Contracts;
 
 interface SensebankInstallmentContract

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace StdOut\LaravelSensebankInstallment;
 
 use Psr\Http\Client\ClientInterface;
@@ -14,7 +16,9 @@ use Yuriizee\SenseBankInstallmentSDK\Requests\Statement;
 class SensebankInstallment implements SensebankInstallmentContract
 {
     private Config $config;
+
     private InstallmentSDK $installmentSDK;
+
     private ClientInterface $client;
 
     public function __construct()
